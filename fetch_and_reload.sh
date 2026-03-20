@@ -1,4 +1,7 @@
 #!/bin/sh
+# Cron job to fetch most recent HRRR forecast data and signal hrrr-service refresh
+
+set -e
 
 # Fetch new zarrs
 /usr/local/bin/python3 /app/fetch_hrrr.py >> /var/log/hrrr.log 2>&1
