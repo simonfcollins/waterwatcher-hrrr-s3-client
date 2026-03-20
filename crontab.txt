@@ -1,2 +1,2 @@
-0 * * * * /usr/local/bin/python3 /app/fetch_hrrr.py >> /var/log/hrrr.log 2>&1
+0 * * * * /usr/local/bin/fetch_and_reload.sh
 
